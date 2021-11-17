@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,26 @@
   to {
     transform: rotate(360deg);
   }
+} */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;500&display=swap');
+  .container{
+    /* width: 290px; */
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
 }
+.inputField{
+  margin: 0 0 15px 0 
+}
+.ant-btn-block{
+  font-weight: bold !important
+}
+.counter{
+  width: 100px;
+height: 100px;
+/* border: 2px black currentColor; */
+border-style: dotted;
+border-radius: 100px;
+text-align: 'center';
+}
+
