@@ -1,7 +1,10 @@
-import Appointments from "./appointments";
-import Login from "./login";
-import DoctorsList from "./doctorsList";
-import Setting from "./setting";
-import Processing from "./processing";
+import Home from './home.js';
+import TrackOrder from './track-order.js';
+import Search from './search.js';
+import MyCollections from './my-collections';
+import MyCollectionList from './my-collection-list';
+import CheckOut from './check-out.js';
+import PlaceOrder from './place-order';
+import Login from './login.js';
 
-export { Appointments, Login, DoctorsList, Setting, Processing }
+export { Home,TrackOrder, Search , MyCollections,MyCollectionList,CheckOut,PlaceOrder,Login};
