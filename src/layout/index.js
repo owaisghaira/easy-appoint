@@ -10,7 +10,7 @@ const ApplicationLayout = ({ children }) => {
         <Layout className="site-layout">
             {isMobileLayout ? <MobileHeader /> : <Header />}
             {/* <BottomNavigationBar/> */}
-            {isMobileLayout ? <BottomNavigationBar className='bottom-navBar' /> :null}
+            {/* {isMobileLayout ? <BottomNavigationBar className='bottom-navBar' /> :null} */}
             {children}
         </Layout>
     );

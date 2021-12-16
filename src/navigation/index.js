@@ -1,28 +1,24 @@
 import React from 'react';
-
 import { Switch, Route } from "react-router-dom";
-import { Home,TrackOrder, Search, MyCollections ,MyCollectionList,CheckOut,PlaceOrder, Login} from '../screens';
+import { Login, Appointments, DoctorsList, Processing, Setting ,Verification} from '../screens';
+
 const Navigation = () => {
     return (
         <Switch>
-            <Route path="/track-order">
-                <TrackOrder />
+            <Route path="/verification">
+                <Verification />
             </Route>
-           
-            <Route path="/checkout">
-                <CheckOut />
+            <Route path="/appointments">
+                <Appointments />
             </Route>
-            <Route path="/order-place">
-                <PlaceOrder />
+            <Route path="/doctors">
+                <DoctorsList />
             </Route>
-            <Route path="/my-collection">
-                <MyCollections />
+            <Route path="/processing">
+                <Processing />
             </Route>
-            <Route path="/my-collection-list">
-                <MyCollectionList />
-            </Route>
-            <Route path="/search/:type/:term">
-                <Search />
+            <Route path="/setting">
+                <Setting />
             </Route>
             <Route path="/">
                 <Login />

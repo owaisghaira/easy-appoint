@@ -14,35 +14,27 @@ export default function BottomNavigationBar() {
     }
 
     return (
-        <div className='bottom-navBar'>
+        <div className=''>
             <BottomNavigation value={value} onChange={handleChange}>
                 <BottomNavigationAction
-                    label="Home"
-                    value="home"
-                    icon={<HomeOutlined />}
-                    onClick={() => history.push({ pathname: '/home' })}
+                    value="All"
+                    icon='All'
+                    onClick={() => history.push({ pathname: '/appointments' })}
 
                 />
                 <BottomNavigationAction
-                    label="Shops"
-                    value="shops"
-                    icon={<ShopOutlined />}
-                    onClick={() => history.push({ pathname: '/home' })}
+                    value="Current"
+                    icon='Current'
+                    onClick={() => history.push({ pathname: '/appointments' })}
 
                 />
                 <BottomNavigationAction
-                    label="Cart"
-                    value="cart"
-                    icon={<ShoppingCartOutlined />}
-                    onClick={() => setIsModalVisible(true)}
-                />
-                <BottomNavigationAction
-                    label="Track"
-                    value="track"
-                    icon={<HistoryOutlined />}
-                    onClick={() => history.push({ pathname: '/track-order' })}
+                    value="Proceed"
+                    icon='Proceed'
+                    onClick={() => history.push({ pathname: '/processing' })}
 
                 />
+
             </BottomNavigation>
             <CartModal displayModal={isModalVisible} toggleModal={setIsModalVisible} />
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Naviation from './navigation';
+import { DoctorsList, Appointments, Setting, Processing } from './screens'
 import { LayoutProvider } from './providers/layout-provider';
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from 'react-redux';
